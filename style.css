@@ -1,17 +1,17 @@
 
   body {
-      margin-left: 2%;
-      margin-right: 2%;
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
-    }
-    
+  margin-left: 2%;
+  margin-right: 2%;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  }
+
   .top-bar {
   background-color: #4CAF50; 
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 1em;
+  padding: 18px;
+  font-size: 1.2em;
   }
 
   .navbar {
@@ -50,17 +50,17 @@
   color:white;
   }
   .phone-icon{
-  color: #ffffff;
+  color: white;
   padding-left: 20%;
   }
 
 
   .hero-section {
   text-align: center;
-  background-image: url('photos/4630.jpg'); 
+  background-image: url('https://i.pinimg.com/736x/73/8d/90/738d9050e7ff037be39a05df95262e2c.jpg'); 
   background-size: cover;
   background-position: center;
-  color: white;
+  color: rgb(255, 254, 254);
 
   }
 
@@ -74,7 +74,7 @@
 
   .hero-content p {
   font-size: 2em;
-  color: rgb(88, 84, 84);
+  color: rgb(20, 19, 19);
   }
 
   .contact-button{
@@ -86,7 +86,7 @@
   border: none;
   cursor: pointer;
   font-size: large;
-  background-color: rgb(221, 210, 210);
+  background-color: rgb(182, 172, 172);
   }
 
   .India{
@@ -205,7 +205,7 @@
   .techniques {
   padding: 20px;
   font-family: sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(245, 236, 236);
   padding-top: 5%;
   }
 
@@ -249,15 +249,6 @@
   font-weight: bold;
   }
 
-  @media (max-width: 768px) {
-  .techniques-container {
-      flex-direction: column;
-  }
-
-  .technique-card {
-      margin-bottom: 20px;
-  }
-  }
 
   .intro{
   text-align: center;
@@ -266,8 +257,8 @@
   }
 
   .Rasis-work{
-    font-size: 2.5em;
-    padding-bottom: 3%;
+  font-size: 2.5em;
+  padding-bottom: 3%;
   }
 
   .possibilities{
@@ -428,7 +419,7 @@
   }
 
   .location-details h2{
-    font-size: 2.2em;
+  font-size: 2.2em;
   }
 
   .inquiry{
@@ -463,6 +454,8 @@
   border: white;
   border-radius: 5px;
   margin-right: 70%;
+  border: white 1px solid;
+  border-radius: 15px;
   }
 
   .contact-info h3 {
@@ -558,7 +551,204 @@
   padding-top: 20px;
   }
 
+  @media (max-width: 500px) {
+  .navbar {
+  flex-direction: column; 
+  gap: 0%;
+  align-items: center;
+  width: 290px;
+  }
 
+  .review{
+  flex-direction: column; 
+  align-items: center;
+  max-width: 800px;
+  }
 
+  .company-history{
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  }
 
+  .nav-links {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  }
+
+  .nav-links li {
+  display: block; 
+  margin: 2px 0;
+  }
+
+  .hero-content h1 {
+  font-size: 2em; 
+  }
+
+  .hero-content p {
+  font-size: 1em;
+  }
+
+  .features {
+  flex-direction: column; 
+  }
+
+  .feature-item {
+  width: 100%;
+  margin-bottom: 20px;
+  }
+
+  .decor-image{
+  width: 370px;
+  }
+
+  .hero-section {
+  width: 370px;
+  }
+
+  .techniques-container {
+  flex-direction: column;
+  }
+
+  .technique-card {
+  width: 100%;
+  margin-bottom: 20px;
+  }
+
+  .clients-container {
+  flex-direction: column;
+  }
+
+  .client-card {
+  width: 370px;
+  margin-bottom: 20px;
+  }
+
+  .logos {
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  }
+
+  .logos div {
+  width: 45%; 
+  margin-bottom: 10px;
+  text-align: center; 
+  }
+
+  .showcase-container {
+  flex-direction: column;
+  }
+
+  .showcase-item {
+  width: 100%;
+  margin-bottom: 20px;
+  }
+
+  .model{
+  width: 370px;
+  }
+  .fabric{
+  width: 370px;
+  }
+
+  .grided-images {
+  flex-direction: column; 
+  align-items: center;
+  gap: 15px; 
+  width: 10%; 
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+  .showcase-title h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  line-height: normal;
+  }
+
+  .showcase-title p {
+  font-size: 16px; 
+  padding-bottom: 2%;
+  padding-top: 1%;
+  text-align: justify; 
+  margin-left: auto;
+  margin-right:auto
+  }
+
+  footer{
+  width: 370px;
+  display: block;
+  flex-wrap: wrap;
+  gap: 0%;
+  margin: 0% auto;
+  flex-direction: column;
+  font-size: small;
+  }
+
+  .column{
+  width: 370px;
+  }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar {
+  flex-direction: column; 
+  gap:10px; 
+  text-align:center; 
+
+  }
+
+  .hero-content h1 {
+  font-size: 2.5em; 
+  }
+
+  .features {
+  flex-wrap: wrap; 
+  }
+
+  .feature-item {
+  width: 45%; 
+  margin-bottom: 20px;
+  }
+
+  .techniques-container {
+  flex-wrap: wrap;
+  }
+
+  .technique-card {
+  width: 45%;
+  margin-bottom: 20px;
+  }
+
+  .clients-container {
+  flex-wrap: wrap;
+  }
+
+  .client-card {
+  width: 45%;
+  margin-bottom: 20px;
+  }
+
+  .logos {
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  }
+
+  .logos div {
+  width: 30%; 
+  margin-bottom: 10px;
+  text-align: center; 
+  }
+
+  .showcase-container {
+  flex-wrap: wrap;
+  }
+
+  .showcase-item {
+  width: 45%;
+  margin-bottom: 20px;
+  }
+  }
 
